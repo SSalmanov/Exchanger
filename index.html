@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Converter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="site">
+        <div class="menu">
+            <img src="./img/Asset 1@3x 1.png" alt="BankLogo">
+            <ul class="ulMenu">
+                <button class="liMenu">BANK</button>
+                <button class="liMenu">BUSINESS</button>
+                <button class="liMenu">INVESTMENTS</button>
+                <button class="liMenu">INSURANCE</button>
+                <button class="liMenu">MOBILE</button>
+                <button class="liMenu">JOURNEY</button>
+                <button class="liMenu">ENTERTAINMENT</button>
+            </ul>
+            <button class="exit">Login</button>
+        </div>
+        <div class="mainContent">
+            <div class="pDiv"><p class="pKonvet">Online Currency Exchanger</p></div>
+            <div class="leftANDright">
+            <div class="left">
+                <p class="psk">I have...</p>
+                <ul class="ulCurrency">
+                    <button class="currency RUBleft">RUB</button>
+                    <button class="currency USDleft">USD</button>
+                    <button class="currency EURleft">EUR</button>
+                    <button class="currency GBPleft">GBP</button>
+                </ul>
+                <input class="leftInput" value="1" type="text" onkeypress="validateAndReplaceInput(event)">
+                <div class="leftInputDiv"></div>
+            </div>
+            <div class="right">
+                <p class="psk">I want to get...</p>
+                <ul class="ulCurrency">
+                    <button class="currency RUBright">RUB</button>
+                    <button class="currency USDright">USD</button>
+                    <button class="currency EURright">EUR</button>
+                    <button class="currency GBPright">GBP</button>
+                </ul>
+                <input class="rightInput" type="text" onkeypress="validateAndReplaceInput(event)">
+               <div class="rightInputDiv"></div>
+            </div>
+            </div>
+        </div>
+        </div>
+    <script src="./app.js"></script>
+</body>
+</html>
